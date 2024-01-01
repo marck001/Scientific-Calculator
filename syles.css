@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    place-items: center;
+    background-color: darkslategray;
+}
+
+.github {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px;
+}
+
+.github {
+    background-color: rgb(17, 17, 17);
+    border-radius: 0 0 10px 10px;
+}
+
+.github a {
+    color: #dfdadf;
+}
+
+.github a i {
+    color: white;
+    margin-right: 10px;
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 15px #000;
+    border-radius: 25px;
+    background-color: rgb(25, 31, 31);
+    box-shadow: 6px 6px 0px #0c0c0c,
+        -6px -6px 0px #0c0c0c;
+}
+
+.container {
+    box-shadow: inset 4px 4px 2px #686666,
+        inset -4px -4px 2px #666565;
+}
+
+.box-text {
+    color: aliceblue;
+    margin: 5px;
+}
+
+.box-text h1 {
+    text-align: left;
+    font-size: 23px;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    outline: #000;
+}
+
+.box-text p {
+    font-family: 'Courier New', monospace, Verdana, Tahoma, sans-serif;
+
+}
+
+.box-text small {
+    float: right;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 12px;
+}
+
+.display-sc input {
+    width: 280px;
+    height: 100px;
+    border: #0c0c0c;
+    outline: green;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: rgb(27, 85, 55);
+    color: rgb(236, 229, 229);
+    font-size: 13px;
+    cursor: pointer;
+    box-shadow: inset 8px 8px 3px #0c0c0c,
+        inset -8px -8px 3px #0c0c0c;
+}
+
+@font-face {
+    font-family: 'casio-calculator-font';
+    src: url('font/casio-calculator-font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.display-sc input {
+    font-family: 'casio-calculator-font';
+}
+
+input::placeholder {
+    color: azure;
+}
+
+button {
+    width: 45px;
+    height: 35px;
+    margin: 3px;
+    background-color: lightslategray;
+    color: aliceblue;
+    font-size: 17px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 0px #000;
+}
+
+.support-btns {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.support-btns button {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+    background: linear-gradient(145deg, #171717, #272627);
+    border-radius: 50%;
+    outline: none;
+    border: 2.5px #090909 solid;
+    box-shadow: inset 1px 1px 0px #7d7c7e;
+    margin: 10px;
+}
+
+.support-btns button:active {
+    transform: translateX(4px);
+}
+
+.support-btns .bg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #171717;
+    border-radius: 150px;
+    margin: 15px;
+    height: 32px;
+    box-shadow: inset 2px 2px 2px#000, inset -2px -2px 2px;
+}
+
+.funct-keys button {
+    width: 35px;
+    height: 25px;
+    font-size: 14px;
+    background-color: rgb(37, 54, 54);
+    margin-top: 5px;
+}
+
+.basic-keys {
+    margin: 5px;
+}
+
+.row span {
+    background-color: #0c0c0c;
+    height: 100px;
+}
+
+#left-btn {
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    background: linear-gradient(145deg, #171717, #272627);
+}
+
+#right-btn {
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background: linear-gradient(145deg, #171717, #272627);
+}
+
+button:active {
+    background-color: aliceblue;
+    transform: translate(2px, 3px);
+}
+
+.funct {
+    background-color: rgb(134, 190, 50);
+}
+
+
+@media screen and (min-width: 1200px) {
+    .box-test small {
+        display: none;
+    }
+
+    .container {
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .github {
+        top: 0;
+        right: 0;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .github {
+        top: 0;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .github {
+        top: 0;
+        right: 0;
+    }
+
+    .container {
+        padding: 20px;
+        border-radius: 20px;
+    }
+}
