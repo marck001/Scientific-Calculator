@@ -14,7 +14,7 @@ This web project aims to simulate the operation and features of a real calculato
 
 1. Download the code and the rest of the folders.
 2. Launch the project by opening the `index.html` file.
-
+You can also go through this link to see the project page: https://marck001.github.io/Scientific-Calculator-using-html-js-css/
 ## Usage Instructions
 
 - Use this calculator mostly to perform basic arithmetic operations.
